@@ -1,0 +1,117 @@
+.footer {
+  padding-top: 128px;
+  padding-bottom: 200px;
+  background-color: #dbdbdb;
+  &__content {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &--title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 36px;
+      margin-bottom: 16px;
+    }
+    &--text {
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 32px;
+      margin-bottom: 32px;
+      max-width: 676px;
+    }
+    &--title,
+    &--text {
+      color: #828282;
+      text-align: center;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 608px;
+    }
+    &--button {
+      @include button(#828282);
+    }
+  }
+}
+// Section: Social links - START
+.social {
+  padding-top: 64px;
+  padding-bottom: 71px;
+  background-color: #828282;
+  &__list {
+    align-items: center;
+    justify-content: space-between;
+    &--title {
+      color: #fff;
+      text-align: center;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 48px;
+      text-transform: uppercase;
+      margin-bottom: 32px;
+    }
+  }
+  &__logo-link {
+    margin-bottom: 56px;
+  }
+  &__sub-list {
+    text-align: center;
+    &--link {
+      color: #fff;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 1.5px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+    }
+    &--link:hover {
+      color: #000;
+    }
+  }
+  &__media-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 32px;
+    &--link {
+      background-color: #dbdbdb;
+      width: 50px;
+      height: 48px;
+      border-radius: 50%;
+    }
+  }
+}
+@media screen and (min-width: 600px) {
+  .social {
+    &__logo-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 50px;
+    }
+    &__sub-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+    }
+  }
+}
+@media screen and (min-width: 900px) {
+  .social {
+    &__list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__logo-link,
+    &__list--title,
+    &__sub-list--link {
+      margin-bottom: 0;
+    }
+  }
+}
+// Section: Social links - END
